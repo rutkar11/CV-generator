@@ -1,0 +1,19 @@
+.overlay.inactive {
+  visibility: hidden
+}
+.overlay.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 9999; /* Ensure the overlay is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Allow clicks to pass through to the components below initially */
+    pointer-events: auto; /* Disable clicks only when active */
+  }
+  
+  

@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is a server for the backend of cv generator project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run client\" \"npm run server \" ",
+    "prod": "set NODE_ENV=PRODUCTION && node server"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@nativedocuments/docx-wasm": "^2.2.13-1561490777",
+    "axios": "^1.5.0",
+    "body-parser": "^1.19.0",
+    "convertapi": "^1.12.0",
+    "cors": "^2.8.5",
+    "docx-pdf": "^0.0.1",
+    "docxtemplater": "^3.38.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.6",
+    "pizzip": "^3.1.4"
+  },
+  "keywords": [],
+  "author": "Keshav Gupta",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.22"
+  },
+  "proxy": "https://server-ni7v5xkfha-em.a.run.app/"
+}
