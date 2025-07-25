@@ -1,6 +1,6 @@
-# cv-generator-app-reactjs
+# CV-Generator
 
-CV generator application developed using ReactJS, Express JS,  NodeJS and Mongo Db.
+CV Generator application developed using ReactJS, Express JS,  NodeJS and Mongo Db.
 
 ## Technologies Used:
 
